@@ -9,20 +9,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  speech_to_text: ^7.0.0
+  speech_to_text: ^7.3.0
   
   # Standard Icons
   cupertino_icons: ^1.0.6
   
   # Camera and Gallery
-  image_picker: ^1.1.2
+  image_picker: ^1.2.1
   
   # Google AI (Gemini)
-  google_generative_ai: ^0.4.6
+  google_generative_ai: ^0.4.7
   
   # Markdown Formatter (This was missing!)
   flutter_markdown: ^0.7.7+1
   flutter_dotenv: ^6.0.0
+  video_player: ^2.11.1
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +35,11 @@ flutter:
   uses-material-design: true
   assets:
     - a.env
+    - assets/videos/intro.mp4
+  fonts: 
+    - family: Gladolia
+      fonts:
+        - asset: assets/fonts/gladolia-demo/GladoliaDEMO-Regular.otf
 
 flutter_launcher_icons:
   android: true
